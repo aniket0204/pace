@@ -1,6 +1,7 @@
 @use "./components/" as *;
 @use "./variables/" as *;
 @use "./pages/" as *;
+@use "./abstracts/" as *;
 *,
 *::before,
 *::after {

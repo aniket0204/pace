@@ -1,0 +1,6 @@
+@use "./../variables/" as *;
+
+::selection {
+  background: $dark;
+  color: $light;
+}

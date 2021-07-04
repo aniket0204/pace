@@ -142,6 +142,25 @@ section .section-heading {
   font-weight: bolder;
 }
 
+::-moz-selection {
+  background: #333;
+  color: #f7f7f7;
+}
+
+::selection {
+  background: #333;
+  color: #f7f7f7;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 8px;
+}
+
 *,
 *::before,
 *::after {

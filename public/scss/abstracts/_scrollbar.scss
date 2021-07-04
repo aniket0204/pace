@@ -1,0 +1,10 @@
+@use "./../variables/" as *;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark;
+  border-radius: 8px;
+}

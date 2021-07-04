@@ -27,4 +27,4 @@ const slide = (dir) => {
   );
 };
 
-export { slide, call };
+export { slide };

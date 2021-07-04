@@ -1,4 +1,4 @@
-import { slide, call } from "./carousel.js";
+import { slide } from "./carousel.js";
 
 const prevBtn = document.querySelector("#slide-left");
 const nextBtn = document.querySelector("#slide-right");
