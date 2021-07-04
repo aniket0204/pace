@@ -1,0 +1,36 @@
+@use "./../variables/" as *;
+
+.hero-section {
+  height: 60vh;
+  width: 100%;
+  background: $light;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-areas: ". img text .";
+  align-items: center;
+  .hero-img {
+    grid-area: img;
+    justify-self: center;
+    img {
+      width: 120%;
+    }
+  }
+  .hero-text {
+    grid-area: text;
+    font-family: $poppins;
+    line-height: 1.5em;
+  }
+}
+
+section {
+  margin-top: 50px;
+  padding: 50px 10%;
+  .section-heading {
+    font-size: 3rem;
+    font-family: $montserrat;
+    text-transform: captialize;
+    text-align: center;
+    font-weight: bolder;
+  }
+}

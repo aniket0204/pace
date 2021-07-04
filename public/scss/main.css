@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/* Light colors */
+/* Dark colors */
 .navbar {
   width: 100%;
   display: grid;
@@ -99,6 +102,44 @@
 }
 .carousel .carousel-track-container .carousel-track .carousel-slide img {
   width: 100%;
+}
+
+.hero-section {
+  height: 60vh;
+  width: 100%;
+  background: #f7f7f7;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-areas: ". img text .";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero-section .hero-img {
+  grid-area: img;
+  justify-self: center;
+}
+.hero-section .hero-img img {
+  width: 120%;
+}
+.hero-section .hero-text {
+  grid-area: text;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+section {
+  margin-top: 50px;
+  padding: 50px 10%;
+}
+section .section-heading {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: captialize;
+  text-align: center;
+  font-weight: bolder;
 }
 
 *,
