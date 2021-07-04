@@ -127,7 +127,9 @@
 .hero-section .hero-text {
   grid-area: text;
   font-family: "Poppins", sans-serif;
-  line-height: 1.5em;
+}
+.hero-section .hero-text p {
+  margin: 1.5em 0;
 }
 
 section {
@@ -154,6 +156,7 @@ section .section-heading {
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
