@@ -1,0 +1,37 @@
+@use "./../variables/" as *;
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 5%;
+  grid-auto-rows: 1fr;
+  grid-template-areas: ". logo list .";
+  align-items: center;
+  .logo {
+    grid-area: logo;
+  }
+  .nav-list {
+    grid-area: list;
+    justify-self: end;
+    display: flex;
+    list-style: none;
+    .nav-item {
+      margin: 0 1em;
+      font-family: $montserrat;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        padding: 0.5em;
+        transition: box-shadow 250ms ease-in-out;
+        &:hover {
+          box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.2);
+        }
+      }
+    }
+  }
+}
