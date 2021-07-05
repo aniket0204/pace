@@ -40,3 +40,15 @@ section {
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .hero-section {
+    .hero-img {
+      justify-self: center;
+    }
+    .hero-text {
+      justify-self: center;
+      text-align: center;
+    }
+  }
+}

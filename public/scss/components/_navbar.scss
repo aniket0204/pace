@@ -16,7 +16,7 @@
   .logo {
     grid-area: logo;
   }
-  .nav-list {
+  .larger-device {
     grid-area: list;
     justify-self: end;
     display: flex;
@@ -38,6 +38,16 @@
         &:hover {
           box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.2);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    .nav-list {
+      .nav-item {
+        font-size: 0.8rem;
       }
     }
   }

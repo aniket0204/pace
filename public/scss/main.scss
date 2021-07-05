@@ -9,3 +9,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
