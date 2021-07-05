@@ -48,3 +48,17 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .carousel {
+    .carousel-action {
+      .slide {
+        font-size: 1.5rem;
+        &::after {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+}

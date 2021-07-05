@@ -193,6 +193,15 @@
   width: 100%;
 }
 
+@media (max-width: 426px) {
+  .carousel .carousel-action .slide {
+    font-size: 1.5rem;
+  }
+  .carousel .carousel-action .slide::after {
+    height: 3rem;
+    width: 3rem;
+  }
+}
 section {
   margin-top: 50px;
   padding: 50px 10%;
