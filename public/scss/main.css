@@ -104,34 +104,6 @@
   width: 100%;
 }
 
-.hero-section {
-  height: 60vh;
-  width: 100%;
-  background: #f7f7f7;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  grid-template-areas: ". img text .";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.hero-section .hero-img {
-  grid-area: img;
-  justify-self: center;
-}
-.hero-section .hero-img img {
-  width: 120%;
-}
-.hero-section .hero-text {
-  grid-area: text;
-  font-family: "Poppins", sans-serif;
-}
-.hero-section .hero-text p {
-  margin: 1.5em 0;
-}
-
 section {
   margin-top: 50px;
   padding: 50px 10%;
@@ -142,6 +114,38 @@ section .section-heading {
   text-transform: captialize;
   text-align: center;
   font-weight: bolder;
+  margin: 1em 0;
+}
+
+.hero-section {
+  margin-top: 0;
+  height: 90vh;
+  width: 100%;
+  background: #f7f7f7;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.hero-section main {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-areas: ". img text .";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero-section main .hero-img {
+  grid-area: img;
+  justify-self: center;
+}
+.hero-section main .hero-img img {
+  width: 120%;
+}
+.hero-section main .hero-text {
+  grid-area: text;
+  font-family: "Poppins", sans-serif;
+}
+.hero-section main .hero-text p {
+  margin: 1.5em 0;
 }
 
 ::-moz-selection {
