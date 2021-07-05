@@ -16,9 +16,14 @@ nav.navbar
   .hamburger_menu 
     .bar#bar-1 
     .bar#bar-2 
-    .bar#bar-3 
+    //- .bar#bar-3 
 .sidebar 
   ul.nav-list 
+    a.nav-link.close-nav(href="#") 
+      li.nav-item 
+        i.fas.fa-times-circle 
+        | &nbsp;
+        | Close Menu
     a.nav-link(href="#")
       li.nav-item Home
     a.nav-link(href="#")

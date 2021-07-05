@@ -15,10 +15,10 @@ section {
 
 .hero-section {
   margin-top: 0;
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   background: $light;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   main {
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
@@ -49,6 +49,18 @@ section {
     .hero-text {
       justify-self: center;
       text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero-section {
+    main {
+      grid-template-columns: 10% 1fr 10%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        ". img ."
+        ". text .";
     }
   }
 }
