@@ -21,6 +21,7 @@
     justify-self: end;
     display: flex;
     list-style: none;
+    overflow: hidden;
     .nav-item {
       margin: 0 1em;
       font-family: $montserrat;
@@ -31,12 +32,33 @@
         margin-right: 0;
       }
       .nav-link {
+        position: relative;
         text-decoration: none;
-        color: #333;
-        padding: 0.5em;
-        transition: box-shadow 250ms ease-in-out;
-        &:hover {
-          box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.2);
+        color: transparent;
+        transition: transform 300ms ease-out;
+        &::before,
+        &::after {
+          content: attr(data-text);
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: transform 300ms ease-out;
+          color: $dark;
+        }
+        &::before {
+          top: 0%;
+        }
+        &::after {
+          top: 100%;
+        }
+      }
+      &:hover {
+        .nav-link {
+          &::before,
+          &::after {
+            transform: translateY(-100%);
+          }
         }
       }
     }

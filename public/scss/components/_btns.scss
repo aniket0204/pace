@@ -1,0 +1,37 @@
+@use "./../variables/" as *;
+
+@mixin btns($color: $black) {
+  color: $color;
+  &::after {
+    background: $color;
+  }
+}
+
+.btn {
+  position: relative;
+  padding: 0.5em 1em;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    mix-blend-mode: difference;
+    transition: height 150ms ease-out;
+  }
+  &:hover {
+    color: $white;
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+.btn-red {
+  @include btns();
+}
