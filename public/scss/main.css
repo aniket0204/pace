@@ -257,8 +257,8 @@
 }
 
 section {
-  margin-top: 50px;
-  padding: 50px 10%;
+  margin-top: 25px;
+  padding: 25px 10%;
 }
 section .section-heading {
   font-size: 3rem;
@@ -301,23 +301,31 @@ section .section-heading {
 }
 
 .showcase main {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-auto-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   grid-row-gap: 2em;
+}
+.showcase main .video iframe {
+  width: 100% !important;
 }
 .showcase main .text {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
   padding: 5%;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .center {
@@ -345,10 +353,21 @@ section .section-heading {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   }
+
+  .showcase {
+    padding: 0;
+  }
 }
 @media (max-width: 320px) {
   .hero-section main {
     grid-template-rows: 1fr 2fr;
+  }
+}
+@media (max-width: 768px) {
+  .showcase main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr -webkit-min-content 1fr -webkit-min-content;
+    grid-template-rows: 1fr min-content 1fr min-content;
   }
 }
 ::-moz-selection {

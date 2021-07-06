@@ -1,8 +1,8 @@
 @use "./../variables/" as *;
 
 section {
-  margin-top: 50px;
-  padding: 50px 10%;
+  margin-top: 25px;
+  padding: 25px 10%;
   .section-heading {
     font-size: 3rem;
     font-family: $montserrat;
@@ -43,18 +43,26 @@ section {
 
 .showcase {
   main {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-auto-rows: 1fr;
-    align-items: center;
     justify-content: center;
     grid-row-gap: 2em;
+    .video {
+      iframe {
+        width: 100% !important;
+      }
+    }
     .text {
       font-family: $montserrat;
       font-weight: 800;
       font-size: 1.5rem;
       padding: 5%;
+      background: $light;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -91,12 +99,24 @@ section {
   .hero-section {
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   }
+  .showcase {
+    padding: 0;
+  }
 }
 
 @media (max-width: 320px) {
   .hero-section {
     main {
       grid-template-rows: 1fr 2fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr min-content 1fr min-content;
     }
   }
 }
