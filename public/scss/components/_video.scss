@@ -1,3 +1,11 @@
-.yt-video {
-  aspect-ratio: 16/9;
+@supports (aspect-ratio: 16/9) {
+  .yt-video {
+    aspect-ratio: 16/9 !important;
+  }
+}
+
+@supports not (aspect-ratio: 16/9) {
+  .yt-video {
+    min-height: 315px;
+  }
 }

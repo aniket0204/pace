@@ -1,4 +1,3 @@
-// const carousel = document.querySelectorAll(".carousel");
 const slide = (carId, dir, activeSlide) => {
   const carousel = document.querySelector(`#${carId}`);
   const carouselTrack = carousel.querySelector(".carousel-track");
