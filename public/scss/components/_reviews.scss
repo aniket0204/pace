@@ -1,0 +1,24 @@
+.reviews {
+  width: 100%;
+  text-align: center;
+  .video-feedback {
+    width: 100%;
+    margin-bottom: 50px;
+    .yt-video {
+      width: 100% !important;
+    }
+  }
+  #feedback-car {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 426px) {
+  .reviews {
+    padding: 25px 0;
+  }
+  #feedback-car {
+    width: 100%;
+  }
+}
