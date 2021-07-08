@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* Light colors */
 /* Dark colors */
 /* Other colors */
@@ -327,6 +328,23 @@
     width: 100%;
   }
 }
+footer {
+  background: #1a1a1a;
+  color: #f7f7f7;
+  padding: 1em 0;
+}
+footer .upper-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .upper-footer .column {
+  padding: 25px;
+}
+footer .upper-footer .column .title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 section {
   margin-top: 25px;
   padding: 25px 10%;

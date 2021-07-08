@@ -1,0 +1,18 @@
+@use "./../variables/" as *;
+
+footer {
+  background: darken($color: $dark, $amount: 10%);
+  color: $light;
+  padding: 1em 0;
+  .upper-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .column {
+      padding: 25px;
+      .title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
