@@ -18,7 +18,6 @@ nextBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const carId = btn.parentElement.parentElement.id;
     activeSlide = slide(carId, "next", activeSlide);
-    console.log("something", activeSlide);
   });
 });
 

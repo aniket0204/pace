@@ -5,7 +5,11 @@
   height: 8px;
 }
 
+::-webkit-scrollbar-track {
+  background: $light;
+}
+
 ::-webkit-scrollbar-thumb {
-  background: $dark;
-  border-radius: 8px;
+  background: rgba($color: $dark, $alpha: 0.4);
+  // border-radius: 8px;
 }
