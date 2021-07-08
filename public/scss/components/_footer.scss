@@ -2,8 +2,8 @@
 
 footer {
   background: darken($color: $dark, $amount: 10%);
-  color: $light;
-  padding: 1em 0;
+  color: $grey;
+  padding-top: 1em;
   .upper-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,6 +12,134 @@ footer {
       .title {
         text-transform: uppercase;
         letter-spacing: 2px;
+        font-family: $oswald;
+        font-size: 2rem;
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 2em;
+        z-index: 2;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 5px;
+          background: $blue;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          margin-bottom: 1em;
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .links {
+      ul {
+        li {
+          a {
+            position: relative;
+            color: $grey;
+            text-decoration: none;
+            transition: 250ms ease-in-out;
+            padding-bottom: 0.3em;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 40%;
+              height: 1px;
+              background: $blue;
+              transition: 250ms ease-in-out;
+            }
+            &:hover {
+              // color: $blue;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .map {
+      ul {
+        .map {
+          // width: 300px;
+          max-width: 100%;
+          iframe {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .sc-links {
+    padding: 50px;
+    background: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin: 0 2em;
+        a {
+          text-decoration: none;
+          font-size: 2rem;
+          color: $grey;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .copyright-text {
+    padding: 25px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .upper-footer {
+      text-align: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      .column {
+        .title {
+          padding: 0;
+          color: $white;
+          &::before {
+            width: 100%;
+            z-index: -1;
+          }
+        }
+      }
+      .links {
+        ul {
+          li {
+            a {
+              &::after {
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
       }
     }
   }
