@@ -6,8 +6,6 @@
   grid-auto-rows: 1fr;
   grid-template-areas: ". logo list .";
   align-items: center;
-  position: sticky;
-  top: 0;
   left: 0;
   z-index: 100;
   background: rgba($color: $white, $alpha: 0.9);
