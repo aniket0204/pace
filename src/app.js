@@ -29,6 +29,11 @@ app.get("/video-gallery", (req, res) => {
   res.render("videogallery");
 });
 
+// Image-Gallery router
+app.get("/image-gallery", (req, res) => {
+  res.render("imagegallery");
+});
+
 app.listen(port, (port) => {
   console.log(`Listening to port: ${port}`);
 });
