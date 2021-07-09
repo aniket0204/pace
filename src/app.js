@@ -14,17 +14,21 @@ app.use(express.static(pubPath));
 // Setting up view engine
 app.set("view engine", "pug");
 
-
 // Home Route
 app.get("/", (req, res) => {
   res.render("index");
-})
+});
 
 // About Router
 app.get("/about", (req, res) => {
   res.render("about");
-})
+});
 
-app.listen(port, port => {
-  console.log(`Listening to port: ${port}`)
-})
+// Video-Gallery router
+app.get("/video-gallery", (req, res) => {
+  res.render("videogallery");
+});
+
+app.listen(port, (port) => {
+  console.log(`Listening to port: ${port}`);
+});
