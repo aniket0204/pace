@@ -104,6 +104,9 @@
 .navbar .larger-device .nav-item .nav-link::after {
   top: 100%;
 }
+.navbar .larger-device .nav-item .nav-link.active {
+  color: #0084ff;
+}
 .navbar .larger-device .nav-item:hover .nav-link::before, .navbar .larger-device .nav-item:hover .nav-link::after {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
