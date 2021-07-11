@@ -152,15 +152,6 @@ section {
   }
 
   #feedback-car {
-    .carousel-action {
-      width: 120%;
-      transform: translateX(-10%);
-      .slide {
-        color: $dark;
-        &::after {
-          background: transparent;
-        }
-      }
-    }
+    margin-bottom: 50px;
   }
 }

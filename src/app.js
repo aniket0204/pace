@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 const pubPath = path.join(__dirname, "../public/");
 app.use(express.static(pubPath));
 
-const flickity = path.join(__dirname, "..flickity/dist/");
+const flickity = path.join(__dirname, "../node_modules/flickity/dist/");
 // const flickityJS = path.join(__dirname, "..flickity/dist/");
 app.use("/flickity", express.static(flickity));
 // app.use("/flickitycss", express.static(flickityJS));

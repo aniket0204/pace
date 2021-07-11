@@ -194,71 +194,15 @@
 }
 .carousel {
   position: relative;
-  width: 100%;
-}
-.carousel .carousel-action {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5%;
-  color: #fff;
-  z-index: 2;
-}
-.carousel .carousel-action .slide {
-  position: relative;
-  font-size: 2rem;
-  z-index: 1;
-  cursor: pointer;
-}
-.carousel .carousel-action .slide::after {
-  content: "";
-  position: absolute;
-  height: 4rem;
-  width: 4rem;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  -webkit-transform: translate(-65%, -25%);
-          transform: translate(-65%, -25%);
-  z-index: -1;
-}
-.carousel .carousel-action .slide:hover::after {
-  background: rgba(0, 0, 0, 0.7);
-}
-.carousel .carousel-track-container {
-  width: 100%;
-  overflow: hidden;
-}
-.carousel .carousel-track-container .carousel-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500%;
-}
-.carousel .carousel-track-container .carousel-track .carousel-slide {
   width: 100vw;
 }
-.carousel .carousel-track-container .carousel-track .carousel-slide img {
+.carousel .carousel-cell {
+  width: 100%;
+}
+.carousel .carousel-cell img {
   width: 100%;
 }
 
-@media (max-width: 426px) {
-  .carousel .carousel-action .slide {
-    font-size: 1.5rem;
-  }
-  .carousel .carousel-action .slide::after {
-    height: 3rem;
-    width: 3rem;
-  }
-}
 .btn {
   position: relative;
   padding: 0.5em 1em;
@@ -605,16 +549,8 @@ section .section-heading {
 .reviews .video-feedback iframe {
   width: 100%;
 }
-.reviews #feedback-car .carousel-action {
-  width: 120%;
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
-}
-.reviews #feedback-car .carousel-action .slide {
-  color: #333;
-}
-.reviews #feedback-car .carousel-action .slide::after {
-  background: transparent;
+.reviews #feedback-car {
+  margin-bottom: 50px;
 }
 
 .gallery {
