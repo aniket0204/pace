@@ -11,3 +11,9 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .img-gallery {
+    grid-template-columns: 1fr;
+  }
+}
