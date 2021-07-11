@@ -426,8 +426,8 @@ section .section-heading {
   min-height: 90vh;
   width: 100%;
   background: #f7f7f7;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 .hero-section main {
   display: grid;
