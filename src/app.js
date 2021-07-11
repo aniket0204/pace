@@ -11,10 +11,13 @@ const port = process.env.PORT || 3000;
 const pubPath = path.join(__dirname, "../public/");
 app.use(express.static(pubPath));
 
+// jQuery
+const jquery = path.join(__dirname, "../node_modules/jquery/dist/");
+app.use("/jquery", express.static(jquery));
+
+// flickity
 const flickity = path.join(__dirname, "../node_modules/flickity/dist/");
-// const flickityJS = path.join(__dirname, "..flickity/dist/");
 app.use("/flickity", express.static(flickity));
-// app.use("/flickitycss", express.static(flickityJS));
 
 // Setting up view engine
 app.set("view engine", "pug");
