@@ -592,6 +592,21 @@ section .section-heading {
     padding: 10px;
   }
 }
+.gallery {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+.gallery .item {
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 300px;
+  overflow: hidden;
+}
+.gallery .item img {
+  width: 100%;
+}
+
 *,
 *::before,
 *::after {
