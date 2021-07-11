@@ -12,10 +12,6 @@ hamburger.addEventListener("click", () => toggleNav(sidebar, close));
 
 // Image Gallery Popup
 
-import { popup } from "./img-gallery.js";
-const items = document.querySelectorAll(".item");
-items.forEach((item, idx) => {
-  item.addEventListener("click", () => {
-    popup(items, idx);
-  });
+$(".img-gallery").magnificPopup({
+  type: "image",
 });

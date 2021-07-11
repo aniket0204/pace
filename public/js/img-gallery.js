@@ -12,5 +12,3 @@ const popup = (items, i) => {
   );
   document.body.appendChild(bigImg);
 };
-
-export { popup };

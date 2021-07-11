@@ -15,6 +15,10 @@ app.use(express.static(pubPath));
 const jquery = path.join(__dirname, "../node_modules/jquery/dist/");
 app.use("/jquery", express.static(jquery));
 
+// magnific popup
+const magnific = path.join(__dirname, "../node_modules/dist/");
+app.use("/magnific-popup", express.static(magnific));
+
 // flickity
 const flickity = path.join(__dirname, "../node_modules/flickity/dist/");
 app.use("/flickity", express.static(flickity));
