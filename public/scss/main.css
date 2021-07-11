@@ -553,6 +553,11 @@ section .section-heading {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  #feedback-car {
+    width: 100%;
+  }
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -592,18 +597,17 @@ section .section-heading {
     padding: 10px;
   }
 }
-.gallery {
+.img-gallery {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 50px;
+  grid-gap: 30px;
+  margin: 50px 0;
+  padding: 0 50px;
 }
-.gallery .item {
+.img-gallery .item {
   width: 100%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  height: 300px;
-  overflow: hidden;
 }
-.gallery .item img {
+.img-gallery .item img {
   width: 100%;
 }
 
