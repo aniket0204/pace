@@ -29,30 +29,27 @@ app.set("view engine", "pug");
 
 // Home Route
 app.get("/", (req, res) => {
-  res.render("index", {
-    active: "home",
-  });
+  res.render("index");
+});
+
+// Course Router
+app.get("/course", (req, res) => {
+  res.render("course");
 });
 
 // About Router
 app.get("/about", (req, res) => {
-  res.render("about", {
-    active: "about pace",
-  });
+  res.render("about");
 });
 
 // Video-Gallery router
 app.get("/video-gallery", (req, res) => {
-  res.render("videogallery", {
-    active: "Video Gallery",
-  });
+  res.render("videogallery");
 });
 
 // Image-Gallery router
 app.get("/image-gallery", (req, res) => {
-  res.render("imagegallery", {
-    active: "image gallery",
-  });
+  res.render("imagegallery");
 });
 
 app.listen(port, (port) => {
