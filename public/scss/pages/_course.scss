@@ -1,0 +1,61 @@
+@use "./../variables/" as *;
+.course {
+  width: 80%;
+  margin: 50px auto;
+  .desc {
+    text-align: center;
+  }
+  .course-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: baseline;
+    grid-gap: 30px;
+    margin: 50px 0;
+    .item {
+      width: 100%;
+      .card {
+        width: 100%;
+        text-align: center;
+        background: $black;
+        padding: 1em;
+        .card-title {
+          font-family: $montserrat;
+          color: $light;
+          font-weight: bold;
+          font-size: 1.5em;
+          margin: 1em 0;
+        }
+        .card-desc {
+          color: $light;
+          font-size: 0.8rem;
+        }
+        .card-footer {
+          margin-top: 1.5em;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .price-tag {
+            background: $light;
+            color: $dark;
+            padding: 0.25em 0.5em;
+            padding-left: 2em;
+            clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0 50%, 20% 0);
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background: $black;
+              left: 1em;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
