@@ -12,9 +12,17 @@ const pubPath = path.join(__dirname, "../public/");
 app.use(express.static(pubPath));
 
 const flickity = path.join(__dirname, "../node_modules/flickity/dist/");
-// const flickityJS = path.join(__dirname, "..flickity/dist/");
 app.use("/flickity", express.static(flickity));
-// app.use("/flickitycss", express.static(flickityJS));
+
+const jqPath = path.join(__dirname, "../node_modules/jquery/dist/");
+app.use("/jquery", express.static(jqPath));
+
+const magnificPopup = path.join(
+  __dirname,
+  "./../node_modules/magnific-popup/dist/"
+);
+
+app.use("/magnific-popup", express.static(magnificPopup));
 
 // Setting up view engine
 app.set("view engine", "pug");
