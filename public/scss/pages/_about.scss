@@ -1,7 +1,10 @@
 @use "./../variables/" as *;
 
-body {
+main {
+  width: 100%;
   background: $light;
+  margin: 0;
+  padding: 50px 0;
 }
 
 .about-section {
