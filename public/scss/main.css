@@ -626,6 +626,9 @@ section .section-heading {
 .course .course-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   grid-gap: 30px;
   margin: 50px 0;
 }
@@ -637,6 +640,24 @@ section .section-heading {
   text-align: center;
   background: #000;
   padding: 1em;
+}
+.course .course-gallery .item .card.red {
+  background: #ff0000;
+}
+.course .course-gallery .item .card.blue {
+  background: #0084ff;
+}
+.course .course-gallery .item .card.yellow {
+  background: #f1c40f;
+}
+.course .course-gallery .item .card.green {
+  background: #2ecc71;
+}
+.course .course-gallery .item .card.purple {
+  background: #9b59b6;
+}
+.course .course-gallery .item .card.ocean {
+  background: #34495e;
 }
 .course .course-gallery .item .card .card-title {
   font-family: "Montserrat", sans-serif;
@@ -682,6 +703,22 @@ section .section-heading {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.course .course-gallery .item .card.light {
+  background: #f7f7f7;
+}
+.course .course-gallery .item .card.light .card-title {
+  color: #333;
+}
+.course .course-gallery .item .card.light .card-desc {
+  color: #333;
+}
+.course .course-gallery .item .card.light .price-tag {
+  background: #000;
+  color: #f7f7f7;
+}
+.course .course-gallery .item .card.light .price-tag::after {
+  background: #f7f7f7;
 }
 
 *,
