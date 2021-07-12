@@ -767,6 +767,12 @@ main {
   color: #333;
 }
 
+@media (max-width: 426px) {
+  main .about-section {
+    width: 100%;
+    padding: 2em;
+  }
+}
 *,
 *::before,
 *::after {
