@@ -635,7 +635,7 @@ footer .copyright-text p {
 }
 .course .course-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -731,6 +731,16 @@ footer .copyright-text p {
   background: #f7f7f7;
 }
 
+@media (max-width: 768px) {
+  .course .course-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 426px) {
+  .course .course-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 main {
   width: 100%;
   background: #f7f7f7;
