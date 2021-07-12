@@ -1,0 +1,47 @@
+@use "./../variables/" as *;
+
+body {
+  background: $light;
+}
+
+.about-section {
+  width: 80%;
+  background: $white;
+  box-shadow: 0 25px 25px 0 rgba($color: $black, $alpha: 0.2);
+  margin: 50px auto;
+  padding: 5em;
+  border-radius: 1em;
+  .title {
+    display: inline-block;
+    font-size: 2rem;
+    color: $black;
+    font-family: $montserrat;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 40%;
+      background: $yellow;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  &.personality {
+    .personality-development-list {
+      text-indent: 16px;
+      list-style: none;
+      li {
+        .icon {
+          color: $dark;
+        }
+      }
+    }
+  }
+}

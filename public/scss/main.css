@@ -231,10 +231,10 @@
   height: 100%;
 }
 
-.btn-red {
+.btn-dark {
   color: #000;
 }
-.btn-red::after {
+.btn-dark::after {
   background: #000;
 }
 
@@ -408,11 +408,11 @@ footer .copyright-text p {
             transform: translateX(-50%);
   }
 }
-section {
+.home-section {
   margin-top: 25px;
   padding: 25px 10%;
 }
-section .section-heading {
+.home-section .section-heading {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   text-transform: captialize;
@@ -719,6 +719,49 @@ section .section-heading {
 }
 .course .course-gallery .item .card.light .price-tag::after {
   background: #f7f7f7;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.about-section {
+  width: 80%;
+  background: #fff;
+  -webkit-box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  padding: 5em;
+  border-radius: 1em;
+}
+.about-section .title {
+  display: inline-block;
+  font-size: 2rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+.about-section .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 40%;
+  background: #f1c40f;
+}
+.about-section p {
+  margin-bottom: 20px;
+}
+.about-section.personality .personality-development-list {
+  text-indent: 16px;
+  list-style: none;
+}
+.about-section.personality .personality-development-list li .icon {
+  color: #333;
 }
 
 *,
