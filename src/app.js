@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
 // Course Router
-app.get("/course", (req, res) => {
+app.get("/courses", (req, res) => {
   res.render("course");
 });
 
