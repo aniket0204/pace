@@ -408,6 +408,40 @@ footer .copyright-text p {
             transform: translateX(-50%);
   }
 }
+.jump-to-top {
+  height: 3rem;
+  width: 3rem;
+  background: #0084ff;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 25px 5px rgba(51, 51, 51, 0.5);
+          box-shadow: 0 0 25px 5px rgba(51, 51, 51, 0.5);
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  -webkit-transition-delay: border 250ms;
+          transition-delay: border 250ms;
+}
+.jump-to-top:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #f7f7f7;
+  color: #333;
+  border: 1px solid #333;
+}
+
 .home-section {
   margin-top: 25px;
   padding: 25px 10%;
