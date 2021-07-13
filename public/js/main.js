@@ -44,3 +44,17 @@ jumpToTopBtn.addEventListener("click", () => {
   scrollToTop();
   console.log("something is happening here");
 });
+
+if (window.scrollY <= 200) {
+  jumpToTopBtn.setAttribute("style", "opacity: 0; pointer-events: none");
+} else {
+  jumpToTopBtn.setAttribute("style", "opacity: 1; pointer-events: all;");
+}
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY <= 200) {
+    jumpToTopBtn.setAttribute("style", "opacity: 0; pointer-events: none");
+  } else {
+    jumpToTopBtn.setAttribute("style", "opacity: 1; pointer-events: all;");
+  }
+});
