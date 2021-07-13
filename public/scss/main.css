@@ -433,6 +433,7 @@ footer .copyright-text p {
   transition: 250ms ease-in-out;
   -webkit-transition-delay: border 250ms;
           transition-delay: border 250ms;
+  z-index: 1000;
 }
 .jump-to-top:hover {
   -webkit-box-shadow: none;
@@ -440,6 +441,17 @@ footer .copyright-text p {
   background: #f7f7f7;
   color: #333;
   border: 1px solid #333;
+}
+
+.wame {
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  left: 1em;
+  bottom: 1em;
+}
+.wame img {
+  width: 100%;
 }
 
 .home-section {
