@@ -447,6 +447,7 @@ footer .copyright-text p {
   width: 5rem;
   left: 1em;
   bottom: 1em;
+  z-index: 1000;
 }
 .wame img {
   width: 100%;
