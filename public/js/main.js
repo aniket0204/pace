@@ -32,3 +32,15 @@ $(document).ready(function () {
     },
   });
 });
+
+// Scroll To Top
+
+import { scrollToTop } from "./jump-to-top.js";
+
+const jumpToTopBtn = document.querySelector(".jump-to-top");
+console.log(jumpToTopBtn);
+
+jumpToTopBtn.addEventListener("click", () => {
+  scrollToTop();
+  console.log("something is happening here");
+});
